@@ -26,7 +26,7 @@ class Penguin(Bird):
 #obj_peng.intro()
 #obj_peng.flight()
 
-birds = []
+birds = [] # Contains references to objects
 birds.append(Bird())
 birds.append(Parrot())
 birds.append(Penguin())
