@@ -2,6 +2,7 @@
 # self acts as a reference to the current instance of a class
 # Using self as the first parameter to the method binds the class attributes with that method’s arguments.
 # self parameter allows us to access methods and attributes that are within the class
+# make sure to put those methods under the most appropriate class.
 
 import sys
 
