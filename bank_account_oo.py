@@ -37,6 +37,10 @@ class Account:
 mum = Account()  # Account() is called a class constructor or account constructor
 dad = Account()
 
+print(mum)
+print(dad)
+print(Account)
+
 # Not a typical OOP approach
 mum.accID, mum.name, mum.balance = "s123", "Mercy Brown", 1000
 dad.accID, dad.name, dad.balance = "g234", "David Brown", 5000
