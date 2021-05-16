@@ -16,7 +16,7 @@ class Account:
     def withdraw(self, amount):
         if self.balance > amount:
             self.balance -= amount
-            return True
+            return True # helps with debugging
         else:
             print("The balance is low")
             return None
@@ -28,6 +28,8 @@ class Account:
         if self.balance >= amount:
             self.balance -= amount
             account.deposit(amount)
+            # account.balance += amount # this is bad practice, always make changes to attributes using methods
+            # the deposit method may have other criticial methods before any change is made to balance attribute , e.g, authentication.
             return True
         else:
             return None
