@@ -22,8 +22,7 @@ class Account:
             return None
 
     def show_balance(self):
-        print("The balance is: $ ", self.balance)
-        pass
+        return self.balance
 
     def transfer(self, account, amount):
         if self.balance >= amount:
@@ -54,6 +53,9 @@ print("The amount in dad's balance before transfer: ", dad.balance)
 dad.transfer(mum, 900)
 print("The amount in dad's balance after transfer ", dad.balance)
 print("The amount in mum's balance after transfer ", mum.balance)
+
+print("Mom's balance is $ ", mum.show_balance())
+print("Dad's balance is $ ", dad.show_balance())
 
 # # One of the ways to assign variables
 # mum = Account("s123", "Mercy Brown", 1000)
