@@ -1,6 +1,7 @@
 # class code: message is not specific to each object. Instead, it is executed once per class.
 # self acts as a reference to the current instance of a class
 # Using self as the first parameter to the method binds the class attributes with that method’s arguments.
+# self parameter allows us to access methods and attributes that are within the class
 
 import sys
 
@@ -47,5 +48,12 @@ sys.stdout.write(str(object_child1) + "\n")
 sys.stdout.write(str(object_child2) + "\n")
 
 object_child1.a_method_in_the_class()
+'''
+#    def a_method_in_the_class(): # without self 
+        sys.stdout.write("Hello from inside a method \n")
+        
+    TypeError: a_method_in_the_class() takes 0 positional arguments but 1 was given
+'''
+
 
 object_child1.method1()
