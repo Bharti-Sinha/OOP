@@ -1,7 +1,4 @@
-# In this task, you’ll learn how to apply functions inside classes
-# in object-oriented programming, it is better to have functions defined inside a class
-# Functions that are defined inside a class are called methods.
-# we can then manipulate the attributes of objects inside that class by calling the methods of the class.
+
 import sys
 
 
@@ -74,26 +71,15 @@ class ExpenseManager:
 
 
 # ---------------------------------------------------------------------------------------------------------------------
-
-
-# Communication between ExpenseManagerUI and ExpenseManager
-# will be performed using standard data types available in Python (strings, numbers, etc.)
-# class will be the entry-point into the application, and will contain all user interaction code
 # “front end” of the application and contains methods relating to displaying the user interface (menus),
 # taking inputs as well as methods that invoke methods from the back end
 
 
 class ExpenseManagerUI:
-    # expense_manager
-    # run_expense_manager, get_menu_choice,
-    # get_str, get_float, get_positive_float, add_expense_via_menu,
-    # search_and_display_matching_expenses, find_expenses_via_menu, remove_expenses_via_menu
+    
 
     expense_manager = ExpenseManager()
 
-    # expense_manager - is not a list but a single object
-    # If we decide to maintain various expense categories,
-    # we can create a list of ExpenseManager objects named expense_managers
 
     def run_expenses_manager(self):
         data_file_name = 'expenses.csv'
@@ -236,10 +222,4 @@ class ExpenseManagerUI:
 
 home_expense_manager = ExpenseManagerUI()
 home_expense_manager.run_expenses_manager()
-
-# remove_expenses method is only a single line and this could have been done in the front end ExpenseManagerUI
-# however, if we change the data structure from a list to something else,
-# we might need to add more code here.
-# At that time, we wouldn’t want to have to change the front end code to match;
-# this small implementation detail therefore promotes looser coupling, which is desirable.
 
