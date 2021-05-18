@@ -36,7 +36,7 @@ class Account:
 
 
 # Assign values to both accounts
-mum = Account()  # Account() is called a class constructor or account constructor
+mum = Account()  
 dad = Account()
 
 print(mum)
